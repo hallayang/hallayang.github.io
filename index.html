@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halla Yang - ML Researcher & Kaggle Grandmaster</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Halla Yang</a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#kaggle" class="nav-link">Kaggle</a></li>
+                <li><a href="#background" class="nav-link">Background</a></li>
+                <li><a href="#media" class="nav-link">Media</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="profile.jpg" alt="Halla Yang" class="profile-photo">
+                <h1 class="hero-title">Halla Yang</h1>
+                <p class="hero-subtitle">Independent Researcher | Kaggle Grandmaster</p>
+                <p class="hero-description">
+                    Former Head of Data Strategies Group at Citadel 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-layout">
+                <div class="about-image">
+                    <img src="about-photo.jpg" alt="Halla Yang at work">
+                </div>
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm an independent researcher with interests in machine learning, artificial intelligence, and quantitative finance.
+                        From 2017-2025, I was at Citadel, 
+                        where I led the Data Strategies Group, a 20 person team of data scientists, analysts and engineers
+                        responsible for research and monetization of alternative data. Prior to Citadel,
+                        I was a consultant at McKinsey, a quant at Jump Trading, and a vice president at Goldman Sachs. I received a Ph.D. in Business Economics from Harvard Business School and a B.A. from Harvard in Physics, summa cum laude.
+                    </p>
+                    <p class="about-text">
+                        My recent research spans neural architectures for computer vision, 3D structural biology, program synthesis for 
+                        reasoning tasks, and applications of transformers to complex problems. I'm particularly interested 
+                        in developing systems that can learn sophisticated visual and logical reasoning capabilities. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Research & Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3 class="project-title">ARC-AGI Challenge</h3>
+                    <p class="project-description">
+                        Visual puzzles requiring reasoning and symbolic knowledge are
+                        straightforward for humans to solve, but a challenge for even
+                        frontier LLM models. I explored approaches to solving this problem based on 
+                        both Bonnet and Macfarlane's <a href="https://arxiv.org/abs/2411.08706">Latent Program Networks</a>, and also Jolicoeur-Martineau's
+                        <a href="https://arxiv.org/abs/2510.04871">Tiny Recursive Models</a>. Final leaderboard not yet released (due Dec 5, 2025).
+                        See this <a href="https://www.nytimes.com/interactive/2025/03/26/business/ai-smarter-human-intelligence-puzzle.html">New York Times article </a>from March 2025 for a description of the challenge. 
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Visual Reasoning</span>
+                        <span class="tag">Program Synthesis</span>
+                        <span class="tag">Transformers</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">RNA 3D Folding</h3>
+                    <p class="project-description">
+                        Google DeepMind was awarded the Nobel Prize in Chemistry in 2024 for their work on protein
+                        structure prediction, but the problem of RNA 3D structure prediction remains open due to greater
+                        difficulty and fewer experimentally resolved structures usable for training data. 
+                        Stanford's Rhiju Das hosted a Kaggle competition to stimulate research, and I 
+                        explored methods based on both AlphaFold and language models
+                        to try to improve the state of the art. My approach relied neither on templates nor MSAs,
+                        and finished <a href="https://www.kaggle.com/competitions/stanford-rna-3d-folding/leaderboard">24th of 1414 contestants.</a>
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Transformers</span>
+                        <span class="tag">Diffusion Models</span>
+                        <span class="tag">Structural Biology</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">AI Mathematical Olympiad</h3>
+                    <p class="project-description">
+                        Can LLMs solve Mathematical Olympiad level problems? While OpenAI and other foundational model
+                        trainers have pushed the limits of what can be done given infinite resources, this competition
+                        posed the question of what could be implemented on 4xL4 GPUs in a finite amount of compute time. I
+                        finished <a href="https://www.kaggle.com/competitions/ai-mathematical-olympiad-progress-prize-2/leaderboard">34th of 2213</a>
+                        on the Kaggle leaderboard for the "Progress Prize 2" competition (close April 1, 2025).
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Large Language Models</span>
+                        <span class="tag">Problem Solving</span>
+                        <span class="tag">Efficient Inference</span>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card">
+                    <h3 class="project-title">Do Industry-Specific Performance Measure Predict Returns? The Case of Same-Store Sales</h3>
+                    <p class="project-description">
+                        Using non-traditional data to forecast KPIs and equity returns. See <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=972193">SSRN</a> for more.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Quantitative Equities</span>
+                        <span class="tag">Industry-Specific Metrics</span>
+                        <span class="tag">Alpha Generation</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Dynamic Portfolio Selection in Arbitrage</h3>
+                    <p class="project-description">
+                        Mathematical derivation of optimal trading strategies for equity pairs trades and other arbitrage 
+                        opportunities. With empirical results. See <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=882536">SSRN</a> for more.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Quantitative Finance</span>
+                        <span class="tag">Arbitrage</span>
+                        <span class="tag">Pairs Trading</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Kaggle Section -->
+    <section id="kaggle" class="section">
+        <div class="container">
+            <h2 class="section-title">Kaggle Achievements</h2>
+            <div class="kaggle-header">
+                <div class="kaggle-badge">
+                    <h5 class="kaggle-rank">Competitions Grandmaster</h5>
+                    <p class="kaggle-status"><img src="grandmaster.png"</p>
+                </div>
+            </div>
+            
+            <div class="competitions-list">
+                <h3 class="subsection-title">Notable Competition Results</h3>
+                
+                <div class="competition-item">
+                    <img src="pfizer_thumb.png" alt="Pfizer" class="competition-icon">
+                    <div class="competition-info">
+                        <h4>Prescription Volume Prediction</h4>
+                        <p>Forecasting sales and measuring marketing effectiveness for Pfizer Oncology. Won $17K.</p>
+                    </div>
+                    <div class="competition-rank">1st Place</div>
+                </div>
+                <div class="competition-item">
+                    <img src="nfl_thumb.png" alt="NFL" class="competition-icon">
+                    <div class="competition-info">
+                        <h4>NFL Punt Analytics</h4>
+                        <p>Analytics competition helping to make the game safer. Won $20K + 2 tickets to Super Bowl LIII.</p>
+                    </div>
+                    <div class="competition-rank">1st Place</div>
+                </div>
+
+                <div class="competition-item">
+                    <img src="recruit_thumb.png" alt="Recruit Ponpare" class="competition-icon">
+                    <div class="competition-info">
+                        <h4>Coupon Purchase Prediction</h4>
+                        <p>Developing models of online browing and purchase behavior. Won $15K.</p>
+                    </div>
+                    <div class="competition-rank">2nd Place</div>
+                </div>
+
+                <div class="competition-item">
+                    <img src="tsa_thumb.png" alt="TSA" class="competition-icon">
+                    <div class="competition-info">
+                        <h4>Passenger Screening Algorithm Challenge</h4>
+                        <p>Identifying threats in airport security systems. Won $100K, shared with teammate Phillip Adkins.
+                        See <a href="https://repository.library.northeastern.edu/downloads/neu:4f24g219b?datastream_id=content">conference</a>
+                        presentation from the Advanced Development for Security Applications (ADSA) Workshop 19, 
+                        and <a href="https://www.dhs.gov/archive/science-and-technology/dhs-prize-competition-16-01">DHS press release</a>. 
+                    </div>
+                    <div class="competition-rank">6th Place</div>
+                </div>
+
+            </div>
+
+
+            <div class="kaggle-link">
+                <a href="https://www.kaggle.com/hallayang" target="_blank" class="btn btn-primary">
+                    View Full Kaggle Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Section -->
+    <section id="background" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Background</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Machine Learning Research</h3>
+                        <p class="timeline-period">2012 - Present</p>
+                        <p class="timeline-description">
+                            Competing in machine learning competitions and conducting research in neural architectures, 
+                            computer vision, and AI reasoning systems. Achieved Kaggle Grandmaster status with 
+                            top placements across diverse domains.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Head of Data Strategies Group</h3>
+                        <p class="timeline-period">Citadel | 2017 - 2025</p>
+                        <p class="timeline-description">
+                            Led data strategies for one of the world's leading hedge funds. Developed quantitative 
+                            models and infrastructure supporting investment decisions across global markets.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Expert, Operations Advanced Analytics</h3>
+                        <p class="timeline-period">McKinsey | 2015 - 2017</p>
+                        <p class="timeline-description">
+                            Developed data science capabilities and forecasting models on behalf of 
+                            industry-leading clients.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Quantitative Researcher</h3>
+                        <p class="timeline-period">Jump Trading | 2013 - 2015</p>
+                        <p class="timeline-description">
+                            Researched and traded news events and economic releases.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Portfolio Manager</h3>
+                        <p class="timeline-period">Arrowstreet Capital | 2011 - 2012</p>
+                        <p class="timeline-description">
+                            Managed portfolios and conducted research on behalf of institutional clients.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Vice President</h3>
+                        <p class="timeline-period">Goldman Sachs | 2007 - 2011</p>
+                        <p class="timeline-description">
+                            Researched and productionized alpha signals in quantitative equities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Ph.D. in Business Economics</h3>
+                        <p class="timeline-period">Harvard Business School | 2002-2007</p>
+                        <p class="timeline-description">
+                            Researched alpha-generating signals and optimal arbitrage strategies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Analyst</h3>
+                        <p class="timeline-period">Dean and Company | 2000-2002</p>
+                        <p class="timeline-description">
+                            Conducted analysis and research on behalf of strategy consulting clients.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Visiting Scientist </h3>
+                        <p class="timeline-period">Max Planck Institute of Quantum Optics | 2000</p>
+                        <p class="timeline-description">
+                            Participated in quantum computing research using trapped ions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">B.A. in Physics, Summa Cum Laude</h3>
+                        <p class="timeline-period">Harvard College | 1996 - 2000</p>
+                        <p class="timeline-description">
+                            Studied physics, math, and music.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h3 class="subsection-title">Technical Expertise</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Machine Learning</h4>
+                        <ul>
+                            <li>Transformers & Attention Mechanisms</li>
+                            <li>Computer Vision (2D/3D CNNs)</li>
+                            <li>Program Synthesis</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frameworks & Tools</h4>
+                        <ul>
+                            <li>PyTorch</li>
+                            <li>XGBoost</li>
+                            <li>Model Optimization</li>
+                            <li>Data Augmentation Pipelines</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Domains</h4>
+                        <ul>
+                            <li>Quantitative Equities</li>
+                            <li>Economic Forecasting</li>
+                            <li>Equity, Rates, Currency and Commodity Futures</li>
+                            <li>Sports Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media" class="section">
+        <div class="container">
+            <h2 class="section-title">Media & Features</h2>
+            <p class="section-description">Interviews, articles, and presentations</p>
+            
+            <div class="media-grid">
+                
+                <!-- Add your actual media items here -->
+                <div class="media-card">
+                    <div class="media-icon"><img src="yt_icon_red_digital.png" alt="YouTube"></div>
+                    <h3 class="media-title">Kaggle (YouTube)</h3>
+                    <p class="media-description">Interview with Competitions Grandmaster Halla Yang (2020)</p>
+                    <a href="https://www.youtube.com/watch?v=XK1iEPolQls" class="media-link">Watch →</a>
+                </div>
+                <div class="media-card">
+                    <div class="media-icon"><img src="chicago-tribune.svg" alt="Chicago Tribune"></div>
+                    <h3 class="media-title">Chicago Tribune</h3>
+                    <p class="media-description">Meet Wilmette's Halla Yang, Winner of $20,000 in an NFL Contest to Make Punters Safer (2019)</p>
+                    <a href="https://www.chicagotribune.com/2019/02/25/meet-wilmettes-halla-yang-winner-of-20000-in-an-nfl-contest-to-make-punts-safer/" class="media-link">Read →</a>
+                </div>
+                <div class="media-card">
+                    <div class="media-icon"><img src="mck.png" alt="McKinsey Careers Blog"></div>
+                    <h3 class="media-title">McKinsey Careers Blog</h3>
+                    <p class="media-description">A Day in the McK Life: Halla (2016)</p>
+                    <a href="https://www.mckinsey.com/careers/meet-our-people/careers-blog/a-day-in-the-mck-life-halla" class="media-link">Read →</a>
+                </div>
+                <div class="media-card">
+                    <div class="media-icon"><img src="kaggle.png" alt="Kaggle Blog"></div>
+                    <h3 class="media-title">Kaggle Blog</h3>
+                    <p class="media-description">Recruit Coupon Purchase Winner's Interview: 2nd Place, Halla Yang (2015)</p>
+                    <a href="https://medium.com/kaggle-blog/recruit-ponpare-is-japans-leading-joint-coupon-site-offering-huge-discounts-on-everything-from-2295e397c7ea" class="media-link">Read →</a>
+                </div>
+                <div class="media-card">
+                    <div class="media-icon"><img src="jeopardy-logo.png" alt="JEOPARDY!"></div>
+                    <h3 class="media-title">Jeopardy Teen Tournament</h3>
+                    <p class="media-description">Excerpt from Teen Tournament (1995) </p>
+                    <a href="https://www.youtube.com/watch?v=8BUlrkVC5Ic" class="media-link">Watch →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-description">
+                Interested in collaboration, research opportunities, or just want to connect?
+            </p>
+            
+            <div class="contact-info">
+                <div class="contact-methods">
+                    <a href="https://www.linkedin.com/in/halla-yang-003247b2/" target="_blank" class="contact-button">
+                        <span class="contact-icon"><img src="linkedin.png" alt="LinkedIn"></span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.kaggle.com/hallayang" target="_blank" class="contact-button">
+                        <span class="contact-icon"><img src="kaggle.png" alt="Kaggle"></span>
+                        <span>Kaggle</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Halla Yang. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
