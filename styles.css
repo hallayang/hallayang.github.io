@@ -634,6 +634,10 @@ body {
 
     .hero {
         padding: 6rem 0 3rem;
+        background-position: center center; /* or try: center top, center bottom */
+        background-size: cover;
+        background-attachment: scroll; /* Disable parallax on mobile for performance */
+
     }
 
     .profile-photo {
