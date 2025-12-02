@@ -626,6 +626,23 @@ body {
 }
 
 /* Responsive Design */
+
+/* Large tablets and small laptops (landscape iPads) */
+@media (max-width: 1024px) {
+    .hero {
+        background-attachment: scroll;
+        background-position: center center;
+    }
+}
+
+/* Tablets (portrait iPads) */
+@media (max-width: 820px) {
+    .hero {
+        background-attachment: scroll;
+        background-position: center center; /* Try: center top, 40% center, etc. */
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         gap: 1rem;
@@ -727,6 +744,14 @@ body {
         gap: 0.75rem;
     }
 
+    .hero {
+        padding: 6rem 0 3rem;
+        background-position: center center; /* or try: center top, center bottom */
+        background-size: cover;
+        background-attachment: scroll; /* Disable parallax on mobile for performance */
+
+    }
+    
     .profile-photo {
         width: 150px;
         height: 150px;
