@@ -730,6 +730,47 @@ body {
     }
 }
 
+
+/* Mobile phones only */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .nav-container {
+        padding: 0 1rem;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .hero {
+        padding: 6rem 0 3rem;
+        background-position: center center; /* or try: center top, center bottom */
+        background-size: cover;
+        background-attachment: scroll; /* Disable parallax on mobile for performance */
+
+    }
+    
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+        border-width: 4px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+
 @media (max-width: 480px) {
     .container {
         padding: 0 1rem;
