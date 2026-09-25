@@ -120,13 +120,25 @@
                     <p class="project-description">
                         Visual puzzles requiring reasoning and symbolic knowledge are
                         straightforward for humans to solve, but a challenge for even
-                        frontier LLM models. I explored approaches to solving this problem based on
+                        frontier LLM models. See this <a href="https://www.nytimes.com/interactive/2025/03/26/business/ai-smarter-human-intelligence-puzzle.html">New York Times article</a> from March 2025 for a description of the challenge.
+                        The third version of the benchmark, ARC-AGI-3, replaces static puzzles with interactive games:
+                        an agent is dropped into an unfamiliar game with no instructions and must work out, by
+                        experimenting, what its actions do and what counts as winning, then clear each level in as few moves as it can.
+                        My current work on ARC-AGI-3 treats this as a problem of learning and acting in a new world.
+                        I have built agents around learned world models and explicit goal inference, as well as
+                        harnesses in which an open-weight language model plays the games under tight compute limits,
+                        and I am using reinforcement learning on gameplay to teach the model to explore and form hypotheses
+                        more effectively.
+                    </p>
+                    <p class="project-description">
+                        On the earlier ARC-AGI-2 puzzles, I explored approaches based on
                         both Bonnet and Macfarlane's <a href="https://arxiv.org/abs/2411.08706">Latent Program Networks</a>, and also Jolicoeur-Martineau's
                         <a href="https://arxiv.org/abs/2510.04871">Tiny Recursive Models</a>.
-                        See this <a href="https://www.nytimes.com/interactive/2025/03/26/business/ai-smarter-human-intelligence-puzzle.html">New York Times article</a> from March 2025 for a description of the challenge.
                     </p>
                     <ul class="project-tags">
-                        <li>Visual Reasoning</li>
+                        <li>Interactive Reasoning</li>
+                        <li>World Models</li>
+                        <li>Reinforcement Learning</li>
                         <li>Program Synthesis</li>
                         <li>Transformers</li>
                     </ul>
