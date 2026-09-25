@@ -116,6 +116,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .section-title::before { content: '//'; font-family: var(--mono); font-size: 0.95rem; font-weight: 400; color: var(--accent); }
 .subsection-title { font-size: 1.05rem; font-weight: 600; margin: 3rem 0 1rem; }
+.subsection-title.first { margin-top: 0; }
+.timeline-title a { color: var(--text); }
+.timeline-title a:hover { color: var(--link); }
 .section-description { color: var(--text-muted); max-width: 560px; }
 
 /* About */
@@ -159,6 +162,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .result-info p { color: var(--text-muted); font-size: 0.95rem; margin-top: 0.25rem; max-width: 68ch; }
 .result-rank { font-family: var(--mono); font-size: 0.95rem; color: var(--text-muted); text-align: right; padding-top: 0.1rem; }
 .result-rank.top { color: var(--accent); font-weight: 500; }
+.result-year { font-family: var(--mono); font-size: 0.75rem; font-weight: 400; color: var(--text-faint); margin-left: 0.4rem; }
+.other-results { color: var(--text-muted); font-size: 0.95rem; margin-top: 1.25rem; max-width: 72ch; }
+.projects + .subsection-title { margin-top: 3rem; }
 
 /* Background timeline */
 .timeline { list-style: none; border-top: 1px solid var(--line); }
@@ -199,7 +205,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .media-link { font-family: var(--mono); font-size: 0.78rem; color: var(--accent); margin-top: 0.5rem; }
 
 /* Contact */
-.contact-methods { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+.contact-methods { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 .contact-button {
     display: inline-flex; align-items: center; gap: 0.6rem;
     padding: 0.7rem 1.1rem; border: 1px solid var(--line-strong); border-radius: var(--radius);
