@@ -21,9 +21,23 @@ const links = document.querySelectorAll('.nav-link');
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + entry.target.id));
+            links.forEach(l => {
+                const on = l.getAttribute('href') === '#' + entry.target.id;
+                l.classList.toggle('active', on);
+                if (on) l.setAttribute('aria-current', 'true'); else l.removeAttribute('aria-current');
+            });
         }
     });
 }, { rootMargin: '-45% 0px -50% 0px' });
 
 document.querySelectorAll('main section[id]').forEach(s => observer.observe(s));
+
+// Close the mobile menu with Escape
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.classList.contains('open')) {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open menu');
+        toggle.focus();
+    }
+});
